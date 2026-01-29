@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables */
+:root {
+    --brown-950: #2D1810;
+    --brown-900: #3D2418;
+    --brown-800: #4D3020;
+    --amber-500: #D4AF37;
+    --amber-600: #C5A028;
+}
+
+/* Base Styles */
+@layer base {
+    body {
+        font-family: 'DM Sans', 'Inter', sans-serif;
+    }
+    
+    .font-playfair {
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+/* Custom Components */
+@layer components {
+    .bg-brown-950 {
+        background-color: var(--brown-950);
+    }
+    
+    .bg-brown-900 {
+        background-color: var(--brown-900);
+    }
+    
+    .bg-brown-900\/50 {
+        background-color: rgba(61, 36, 24, 0.5);
+    }
+    
+    .bg-brown-900\/70 {
+        background-color: rgba(61, 36, 24, 0.7);
+    }
+    
+    .border-brown-800 {
+        border-color: var(--brown-800);
+    }
+    
+    .border-brown-800\/50 {
+        border-color: rgba(77, 48, 32, 0.5);
+    }
+    
+    .text-amber-500 {
+        color: var(--amber-500);
+    }
+    
+    .text-amber-400 {
+        color: #F5C842;
+    }
+    
+    .text-amber-600 {
+        color: var(--amber-600);
+    }
+    
+    .border-amber-600 {
+        border-color: var(--amber-600);
+    }
+    
+    .border-amber-600\/30 {
+        border-color: rgba(197, 160, 40, 0.3);
+    }
+    
+    .border-amber-600\/40 {
+        border-color: rgba(197, 160, 40, 0.4);
+    }
+    
+    .from-amber-500 {
+        --tw-gradient-from: var(--amber-500);
+    }
+    
+    .from-amber-900\/30 {
+        --tw-gradient-from: rgba(120, 80, 40, 0.3);
+    }
+    
+    .to-orange-900\/20 {
+        --tw-gradient-to: rgba(154, 52, 18, 0.2);
+    }
+    
+    .hover\:text-amber-400:hover {
+        color: #F5C842;
+    }
+    
+    .hover\:text-amber-500:hover {
+        color: var(--amber-500);
+    }
+    
+    .hover\:border-amber-600\/30:hover {
+        border-color: rgba(197, 160, 40, 0.3);
+    }
+    
+    .category-btn {
+        @apply bg-brown-900/50 text-zinc-400 border border-brown-800/50;
+    }
+    
+    .category-btn.active {
+        @apply bg-amber-600 text-white border-amber-600;
+    }
+    
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Animations */
+@layer utilities {
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .animate-fadeIn {
+        animation: fadeIn 0.6s ease-out;
+    }
+    
+    @keyframes glow {
+        0%, 100% {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        50% {
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.5);
+        }
+    }
+    
+    .animate-glow {
+        animation: glow 2s ease-in-out infinite;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-btn {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Custom Gradient Backgrounds */
+.bg-gradient-brown {
+    background: linear-gradient(135deg, var(--brown-950) 0%, var(--brown-900) 100%);
+}
+
+/* Focus States for Accessibility */
+button:focus,
+a:focus {
+    outline: 2px solid var(--amber-500);
+    outline-offset: 2px;
+}
+
+/* Smooth Transitions */
+* {
+    transition-property: color, background-color, border-color, transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}

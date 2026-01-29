@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kukkad In Kukkar - Restaurant Menu</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fkukkadmen8270back.builtwithrocket.new&_be=https%3A%2F%2Fappanalytics.rocket.new&_v=0.1.16"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-brown-950 text-zinc-50 antialiased">
+
+    <!-- Hero Header -->
+    <header class="relative pt-6 pb-8 px-6 border-b border-brown-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <!-- Logo -->
+                <div class="flex items-center gap-4">
+                    <div class="w-20 h-20 md:w-24 md:h-24 relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-600/20 rounded-full blur-xl"></div>
+                        <div class="relative w-full h-full bg-brown-900 rounded-full border-2 border-amber-600/30 flex items-center justify-center">
+                            <iconify-icon icon="game-icons:rooster" class="text-amber-500 text-4xl md:text-5xl"></iconify-icon>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-amber-500 font-playfair">
+                            Kukkad In Kukkar
+                        </h1>
+                        <p class="text-sm md:text-base text-zinc-400 tracking-wider font-light">Restaurant</p>
+                    </div>
+                </div>
+
+                <!-- Contact & QR -->
+                <div class="flex items-center gap-6">
+                    <div class="text-right hidden md:block">
+                        <a href="tel:+917529078910" class="block text-lg font-medium text-amber-500 hover:text-amber-400 transition-colors">
+                            +91 75290-78910
+                        </a>
+                        <a href="tel:+919815823366" class="block text-lg font-medium text-amber-500 hover:text-amber-400 transition-colors">
+                            +91 98158-23366
+                        </a>
+                    </div>
+                    <div class="w-20 h-20 md:w-24 md:h-24 bg-white p-2 rounded-lg">
+                        <div class="w-full h-full bg-gradient-to-br from-zinc-900 to-zinc-800 rounded flex items-center justify-center">
+                            <iconify-icon icon="mdi:qrcode" class="text-white text-3xl"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Contact -->
+            <div class="flex md:hidden justify-center gap-4 mt-4 text-sm">
+                <a href="tel:+917529078910" class="text-amber-500 hover:text-amber-400 transition-colors">
+                    <iconify-icon icon="ph:phone-fill" class="align-middle mr-1"></iconify-icon>
+                    +91 75290-78910
+                </a>
+                <a href="tel:+919815823366" class="text-amber-500 hover:text-amber-400 transition-colors">
+                    <iconify-icon icon="ph:phone-fill" class="align-middle mr-1"></iconify-icon>
+                    +91 98158-23366
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <nav class="sticky top-0 z-40 bg-brown-950/95 backdrop-blur-md border-b border-brown-800/50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex gap-2 overflow-x-auto scrollbar-hide">
+                <button class="category-btn active px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="veg-main">
+                    Veg Main Course
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="chaap">
+                    Chaap
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="chinese">
+                    Chinese
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="non-veg">
+                    Non-veg Main Course
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="tandoori">
+                    Veg Tandoori Snacks
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="breads">
+                    Breads
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="salad">
+                    Salad & Papad
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="raita">
+                    Raita
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="mutton">
+                    Mutton
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="egg">
+                    Egg
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="fish">
+                    Fish
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Sections -->
+    <main class="py-12 px-6">
+        <div class="max-w-7xl mx-auto space-y-16">
+
+            <!-- Veg Main Course -->
+            <section id="veg-main" class="menu-section">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:food-variant" class="text-2xl"></iconify-icon>
+                    Veg Main Course
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Dal Makhani</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹150</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹250</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Dal Tadka</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹150</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹250</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Chana Masala</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹180</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹250</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Shahi Paneer</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹220</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹390</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Paneer Tikka Masala</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹250</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹410</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Kadhai Paneer</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹250</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹410</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Paneer Butter Masala</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹250</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹410</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Paneer Lababdar</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹250</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹410</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Paneer Bhurji</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹250</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹410</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Matar Paneer</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹220</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹380</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Matar Mushroom</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹250</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹410</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Masala Mushroom</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹250</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹410</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Mix Veg</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹180</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹280</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chaap Section -->
+            <section id="chaap" class="menu-section hidden">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:food" class="text-2xl"></iconify-icon>
+                    Chaap
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Afghani Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹140</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹220</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Tandoori Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹120</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹210</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Masala Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹120</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹250</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Achari Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹120</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹220</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Malai Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹140</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹250</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Kali Mirch Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹160</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹260</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Masala Gravy Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹180</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹300</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Kadhai Gravy Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹190</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹310</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Crispy Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹140</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹250</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Stuffed Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹150</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹290</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chinese Section -->
+            <section id="chinese" class="menu-section hidden">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:noodles" class="text-2xl"></iconify-icon>
+                    Chinese
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Chilly Paneer</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹220</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹380</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Garlic Chaap</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹220</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹380</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Mushroom Chilli</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹220</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹430</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Chilly Chicken</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹350</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹590</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Honey Chilli Potato (dry)</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Price</div>
+                                <div class="text-amber-500 font-bold">₹180</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Honey Chilli Cauliflower (dry)</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Price</div>
+                                <div class="text-amber-500 font-bold">₹200</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Honey Chilli Paneer (dry)</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Price</div>
+                                <div class="text-amber-500 font-bold">₹280</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Honey Chilli Mushroom (dry)</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Price</div>
+                                <div class="text-amber-500 font-bold">₹280</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Chicken Lollipop 6 Pc</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Price</div>
+                                <div class="text-amber-500 font-bold">₹450</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Non-veg Main Course -->
+            <section id="non-veg" class="menu-section hidden">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:food-drumstick" class="text-2xl"></iconify-icon>
+                    Non-veg Main Course
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Butter Chicken</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹360</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹650</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Kadhai Chicken</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹360</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹650</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Rara Chicken</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹380</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹600</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Chicken Lababdar</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹360</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹600</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Chicken Tikka Butter Masala</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹380</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹600</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Masala Chicken</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹360</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹600</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Lemon Chicken</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹340</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹550</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Tawa Chicken</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹350</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹650</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Haryali Chicken</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹320</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹550</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Leg Gravy</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Price</div>
+                                <div class="text-amber-500 font-bold">₹200</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Chest Gravy</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Price</div>
+                                <div class="text-amber-500 font-bold">₹200</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Kali Mirch Chicken</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹380</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹600</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tandoori Snacks -->
+            <section id="tandoori" class="menu-section hidden">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:grill" class="text-2xl"></iconify-icon>
+                    Veg Tandoori Snacks
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Paneer Garlic Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹310</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Peri Peri Paneer Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹310</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Tandoori Paneer Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹300</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Paneer Kali Mirch Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹330</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Mushroom Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹310</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Mushroom Kali Mirch Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹330</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Mushroom Afghani Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹340</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Dahi Kabab</h3>
+                            <div class="text-amber-500 font-bold">�rees40</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Veg Seekh Kabab</h3>
+                            <div class="text-amber-500 font-bold">₹200</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Hara Bhara Kabab (fry)</h3>
+                            <div class="text-amber-500 font-bold">₹220</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Paneer Tikka (fry)</h3>
+                            <div class="text-amber-500 font-bold">₹250</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Mushroom Duplex (fry)</h3>
+                            <div class="text-amber-500 font-bold">₹280</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Roasted Pineapple</h3>
+                            <div class="text-amber-500 font-bold">₹280</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Breads -->
+            <section id="breads" class="menu-section hidden">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:bread-slice" class="text-2xl"></iconify-icon>
+                    Breads
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Tandoori Roti</h3>
+                            <div class="text-amber-500 font-bold">₹15</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Butter Roti</h3>
+                            <div class="text-amber-500 font-bold">₹20</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Butter Naan</h3>
+                            <div class="text-amber-500 font-bold">₹45</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Plain Naan</h3>
+                            <div class="text-amber-500 font-bold">₹40</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Garlic Naan</h3>
+                            <div class="text-amber-500 font-bold">₹70</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Laccha Parantha</h3>
+                            <div class="text-amber-500 font-bold">₹40</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Green Chilli Parantha</h3>
+                            <div class="text-amber-500 font-bold">₹40</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Red Mirch Parantha</h3>
+                            <div class="text-amber-500 font-bold">₹40</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Paneer Parantha</h3>
+                            <div class="text-amber-500 font-bold">₹100</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Aloo Parantha</h3>
+                            <div class="text-amber-500 font-bold">₹50</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Onion Parantha</h3>
+                            <div class="text-amber-500 font-bold">₹50</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Stuffed Naan</h3>
+                            <div class="text-amber-500 font-bold">₹110</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Cheese Garlic Naan</h3>
+                            <div class="text-amber-500 font-bold">₹110</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Missi Roti</h3>
+                            <div class="text-amber-500 font-bold">₹40</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Garlic Roti</h3>
+                            <div class="text-amber-500 font-bold">₹30</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Pyaz Roti</h3>
+                            <div class="text-amber-500 font-bold">₹30</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Salad & Papad -->
+            <section id="salad" class="menu-section hidden">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:food-apple" class="text-2xl"></iconify-icon>
+                    Salad, Papad & Chakhna
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Green Salad</h3>
+                            <div class="text-amber-500 font-bold">₹80</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Russian Salad</h3>
+                            <div class="text-amber-500 font-bold">₹220</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Cream Salad</h3>
+                            <div class="text-amber-500 font-bold">₹120</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Roasted Papad</h3>
+                            <div class="text-amber-500 font-bold">₹30</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Rice Papad</h3>
+                            <div class="text-amber-500 font-bold">₹40</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Masala Papad</h3>
+                            <div class="text-amber-500 font-bold">₹80</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Plain Peanut</h3>
+                            <div class="text-amber-500 font-bold">₹70</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Channa Chaat</h3>
+                            <div class="text-amber-500 font-bold">₹120</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Fresh Fruit Chaat</h3>
+                            <div class="text-amber-500 font-bold">₹140</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Channa Masala</h3>
+                            <div class="text-amber-500 font-bold">₹140</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Dahi Bhalla</h3>
+                            <div class="text-amber-500 font-bold">₹150</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Crispy Corn</h3>
+                            <div class="text-amber-500 font-bold">₹150</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Maggi Masala</h3>
+                            <div class="text-amber-500 font-bold">₹120</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Raita -->
+            <section id="raita" class="menu-section hidden">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:bowl-mix" class="text-2xl"></iconify-icon>
+                    Raita
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Veg Raita</h3>
+                            <div class="text-amber-500 font-bold">₹80</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Bundi Raita</h3>
+                            <div class="text-amber-500 font-bold">₹60</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">Plain Curd</h3>
+                            <div class="text-amber-500 font-bold">₹40</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mutton -->
+            <section id="mutton" class="menu-section hidden">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:food-steak" class="text-2xl"></iconify-icon>
+                    Mutton
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Kukkar Mutton</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹450</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹850</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-zinc-100">Home Style Mutton</h3>
+                            <div class="text-right">
+                                <div class="text-xs text-zinc-500">Half</div>
+                                <div class="text-amber-500 font-bold">₹450</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-zinc-500">Full</div>
+                            <div class="text-amber-500 font-bold">₹850</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Egg -->
+            <section id="egg" class="menu-section hidden">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:egg" class="text-2xl"></iconify-icon>
+                    Egg
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">2 Egg Omlate</h3>
+                            <div class="text-amber-500 font-bold">₹75</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">2 Egg Boil</h3>
+                            <div class="text-amber-500 font-bold">₹75</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">2 Egg Curry</h3>
+                            <div class="text-amber-500 font-bold">₹150</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">2 Eggs Butter Bhunji</h3>
+                            <div class="text-amber-500 font-bold">₹95</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">2 Egg Fry</h3>
+                            <div class="text-amber-500 font-bold">₹75</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">2 Egg Half Fry</h3>
+                            <div class="text-amber-500 font-bold">₹75</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-4 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-base font-semibold text-zinc-100">2 Egg Bread Omlate</h3>
+                            <div class="text-amber-500 font-bold">₹100</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fish -->
+            <section id="fish" class="menu-section hidden">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+                    <iconify-icon icon="mdi:fish" class="text-2xl"></iconify-icon>
+                    Fish
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Fish Fry</h3>
+                            <div class="text-amber-500 font-bold">₹350</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Fish Garlic Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹380</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Tandoori Fish Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹350</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Amritsari Fish Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹370</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">K Mirch Fish Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹390</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Malai Fish Tikka</h3>
+                            <div class="text-amber-500 font-bold">₹320</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Fish Curry</h3>
+                            <div class="text-amber-500 font-bold">₹380</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Fish Masala Curry</h3>
+                            <div class="text-amber-500 font-bold">₹400</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-semibold text-zinc-100">Amritsari Fish FRY</h3>
+                            <div class="text-amber-500 font-bold">₹360</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Special Items -->
+            <section class="py-12">
+                <div class="bg-gradient-to-br from-amber-900/30 to-orange-900/20 border-2 border-amber-600/40 rounded-2xl p-8 md:p-12">
+                    <div class="flex items-center justify-center gap-3 mb-8">
+                        <iconify-icon icon="mdi:star" class="text-amber-500 text-3xl"></iconify-icon>
+                        <h2 class="text-3xl md:text-5xl font-bold text-amber-500 text-center font-playfair">
+                            KNK Special
+                        </h2>
+                        <iconify-icon icon="mdi:star" class="text-amber-500 text-3xl"></iconify-icon>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                        <div class="bg-brown-900/70 border border-amber-600/30 rounded-xl p-6 text-center hover:scale-105 transition-transform">
+                            <h3 class="text-2xl font-bold text-amber-400 mb-2">KNK Special Kukkar Chicken</h3>
+                            <div class="flex justify-center gap-8 mt-4">
+                                <div>
+                                    <div class="text-xs text-zinc-400">Half</div>
+                                    <div class="text-2xl font-bold text-amber-500">₹320</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-zinc-400">Full</div>
+                                    <div class="text-2xl font-bold text-amber-500">₹550</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-brown-900/70 border border-amber-600/30 rounded-xl p-6 text-center hover:scale-105 transition-transform">
+                            <h3 class="text-2xl font-bold text-amber-400 mb-2">KNK Special Kukkar Mutton</h3>
+                            <div class="flex justify-center gap-8 mt-4">
+                                <div>
+                                    <div class="text-xs text-zinc-400">Half</div>
+                                    <div class="text-2xl font-bold text-amber-500">₹450</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-zinc-400">Full</div>
+                                    <div class="text-2xl font-bold text-amber-500">₹850</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-brown-800/50 py-8 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-center md:text-left">
+                <p class="text-sm text-zinc-400">© 2026 Kukkad In Kukkar Restaurant</p>
+            </div>
+            
+            <div class="flex items-center gap-6">
+                <a href="tel:+917529078910" class="text-amber-500 hover:text-amber-400 transition-colors text-sm">
+                    +91 75290-78910
+                </a>
+                <span class="text-zinc-700">|</span>
+                <a href="tel:+919815823366" class="text-amber-500 hover:text-amber-400 transition-colors text-sm">
+                    +91 98158-23366
+                </a>
+            </div>
+
+            <div class="flex gap-4">
+                <a href="#" class="text-zinc-500 hover:text-amber-500 transition-colors">
+                    <iconify-icon icon="mdi:instagram" width="20"></iconify-icon>
+                </a>
+                <a href="#" class="text-zinc-500 hover:text-amber-500 transition-colors">
+                    <iconify-icon icon="mdi:facebook" width="20"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Category Navigation
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const menuSections = document.querySelectorAll('.menu-section');
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const category = btn.dataset.category;
+                
+                // Update active button
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Show selected section
+                menuSections.forEach(section => {
+                    if (section.id === category) {
+                        section.classList.remove('hidden');
+                    } else {
+                        section.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>
