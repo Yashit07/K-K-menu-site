@@ -1269,3 +1269,46 @@ a:focus {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+/* ===============================
+   Swipe hint (mobile only)
+   =============================== */
+
+.swipe-hint {
+  opacity: 0.6;
+  animation: swipeFade 2.5s ease-in-out infinite;
+}
+
+.swipe-hint .arrow-left,
+.swipe-hint .arrow-right {
+  display: inline-block;
+  animation: swipeArrow 1.6s ease-in-out infinite;
+}
+
+.swipe-hint .arrow-right {
+  animation-delay: 0.8s;
+}
+
+@keyframes swipeArrow {
+  0% {
+    transform: translateX(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(6px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.4;
+  }
+}
+
+@keyframes swipeFade {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}

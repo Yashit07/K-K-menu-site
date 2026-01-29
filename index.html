@@ -77,6 +77,12 @@
     <nav class="sticky top-0 z-40 bg-brown-950/95 backdrop-blur-md border-b border-brown-800/50">
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex gap-2 overflow-x-auto scrollbar-hide">
+                <p id="swipe-hint"
+   class="mt-2 text-center text-xs text-zinc-400 md:hidden flex items-center justify-center gap-2 swipe-hint">
+    <span class="arrow-left">←</span>
+    Swipe for more categories
+    <span class="arrow-right">→</span>
+</p>
                 <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="non-veg-tandoori">
                     Non-Veg Tandoori Snacks
                 </button>
@@ -1608,6 +1614,7 @@
             });
         });
     });
+    
 </script>
 
 <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
