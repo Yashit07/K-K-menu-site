@@ -19,15 +19,21 @@
                 <div class="flex items-center gap-4">
                     <div class="w-20 h-20 md:w-24 md:h-24 relative">
                         <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-600/20 rounded-full blur-xl"></div>
-                        <div class="relative w-full h-full bg-brown-900 rounded-full border-2 border-amber-600/30 flex items-center justify-center">
-                            <iconify-icon icon="game-icons:rooster" class="text-amber-500 text-4xl md:text-5xl"></iconify-icon>
-                        </div>
+                        <div class="w-20 h-20 md:w-24 md:h-24 relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-600/20 rounded-full blur-xl"></div>
+
+  <img
+    src="logo/kndklogo2.png"
+    alt="Kukkad In Kukkar Logo"
+    class="relative w-full h-full rounded-full object-cover"
+  />
+</div>
                     </div>
                     <div>
                         <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-amber-500 font-playfair">
                             Kukkad In Kukkar
                         </h1>
-                        <p class="text-sm md:text-base text-zinc-400 tracking-wider font-light">Restaurant</p>
+                        <p class="text-sm md:text-base text-zinc-400 tracking-wider font-light">Tavern</p>
                     </div>
                 </div>
 
@@ -41,10 +47,14 @@
                             +91 98158-23366
                         </a>
                     </div>
-                    <div class="w-20 h-20 md:w-24 md:h-24 bg-white p-2 rounded-lg">
+                    <!-- <div class="w-20 h-20 md:w-24 md:h-24 bg-white p-2 rounded-lg">
                         <div class="w-full h-full bg-gradient-to-br from-zinc-900 to-zinc-800 rounded flex items-center justify-center">
-                            <iconify-icon icon="mdi:qrcode" class="text-white text-3xl"></iconify-icon>
-                        </div>
+                            <img
+    src="logo/kndklogo2.png"
+    alt="Kukkad In Kukkar Logo"
+    class="relative w-full h-full rounded-full object-cover"
+  />
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -67,39 +77,54 @@
     <nav class="sticky top-0 z-40 bg-brown-950/95 backdrop-blur-md border-b border-brown-800/50">
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex gap-2 overflow-x-auto scrollbar-hide">
-                <button class="category-btn active px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="veg-main">
-                    Veg Main Course
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="non-veg-tandoori">
+                    Non-Veg Tandoori Snacks
                 </button>
-                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="chaap">
-                    Chaap
-                </button>
-                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="chinese">
-                    Chinese
-                </button>
-                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="non-veg">
-                    Non-veg Main Course
-                </button>
+
                 <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="tandoori">
                     Veg Tandoori Snacks
                 </button>
-                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="breads">
-                    Breads
-                </button>
+
                 <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="salad">
                     Salad & Papad
                 </button>
-                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="raita">
-                    Raita
+
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="veg-main">
+                    Veg Main Course
                 </button>
+
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="non-veg">
+                    Non-veg Main Course
+                </button>
+
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="chaap">
+                    Chaap
+                </button>
+
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="chinese">
+                    Chinese
+                </button>
+
                 <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="mutton">
                     Mutton
                 </button>
+
                 <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="egg">
                     Egg
                 </button>
+
                 <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="fish">
                     Fish
                 </button>
+
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="breads">
+                    Breads
+                </button>
+
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all" data-category="raita">
+                    Raita
+                </button>
+
             </div>
         </div>
     </nav>
@@ -789,11 +814,11 @@
                     </div>
 
                     <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
-                        <div class="flex justify-between items-start">
-                            <h3 class="text-lg font-semibold text-zinc-100">Dahi Kabab</h3>
-                            <div class="text-amber-500 font-bold">�rees40</div>
-                        </div>
-                    </div>
+    <div class="flex justify-between items-start">
+        <h3 class="text-lg font-semibold text-zinc-100">Dahi Kabab</h3>
+        <div class="text-amber-500 font-bold">₹240</div>
+    </div>
+</div>
 
                     <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5 hover:border-amber-600/30 transition-all">
                         <div class="flex justify-between items-start">
@@ -831,6 +856,217 @@
                     </div>
                 </div>
             </section>
+
+            <section id="non-veg-tandoori" class="menu-section hidden">
+    <h2 class="text-3xl md:text-4xl font-bold text-amber-500 mb-8 flex items-center gap-3">
+        <iconify-icon icon="mdi:grill" class="text-2xl"></iconify-icon>
+        Non-Veg Tandoori Snacks
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Garlic Chicken Tikka (Full only) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-semibold text-zinc-100">Garlic Chicken Tikka</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Full</div>
+                    <div class="text-amber-500 font-bold">₹400</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peri Peri Chicken Tikka (Full only) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-semibold text-zinc-100">Peri Peri Chicken Tikka</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Full</div>
+                    <div class="text-amber-500 font-bold">₹400</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tandoori Chicken (Half + Full) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start mb-2">
+                <h3 class="text-lg font-semibold text-zinc-100">Tandoori Chicken</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Half</div>
+                    <div class="text-amber-500 font-bold">₹250</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="text-xs text-zinc-500">Full</div>
+                <div class="text-amber-500 font-bold">₹450</div>
+            </div>
+        </div>
+
+        <!-- Afghani Chicken (Half + Full) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start mb-2">
+                <h3 class="text-lg font-semibold text-zinc-100">Afghani Chicken</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Half</div>
+                    <div class="text-amber-500 font-bold">₹300</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="text-xs text-zinc-500">Full</div>
+                <div class="text-amber-500 font-bold">₹500</div>
+            </div>
+        </div>
+
+        <!-- Kali Mirch Chicken (Half + Full) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start mb-2">
+                <h3 class="text-lg font-semibold text-zinc-100">Kali Mirch Chicken</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Half</div>
+                    <div class="text-amber-500 font-bold">₹350</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="text-xs text-zinc-500">Full</div>
+                <div class="text-amber-500 font-bold">₹530</div>
+            </div>
+        </div>
+
+        <!-- Chicken Tangri (Half + Full) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start mb-2">
+                <h3 class="text-lg font-semibold text-zinc-100">Chicken Tangri</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Half</div>
+                    <div class="text-amber-500 font-bold">₹300</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="text-xs text-zinc-500">Full</div>
+                <div class="text-amber-500 font-bold">₹480</div>
+            </div>
+        </div>
+
+        <!-- Chicken Tikka (Full only) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-semibold text-zinc-100">Chicken Tikka</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Full</div>
+                    <div class="text-amber-500 font-bold">₹350</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chicken Malai Tikka (Full only) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-semibold text-zinc-100">Chicken Malai Tikka</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Full</div>
+                    <div class="text-amber-500 font-bold">₹380</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chicken Achari Tikka (Full only) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-semibold text-zinc-100">Chicken Achari Tikka</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Full</div>
+                    <div class="text-amber-500 font-bold">₹370</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chicken Kali Mirch Tikka (Full only) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-semibold text-zinc-100">Chicken Kali Mirch Tikka</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Full</div>
+                    <div class="text-amber-500 font-bold">₹380</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chicken Seekh Kabab (Full only) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-semibold text-zinc-100">Chicken Seekh Kabab</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Full</div>
+                    <div class="text-amber-500 font-bold">₹250</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mutton Seekh Kabab (Full only) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-semibold text-zinc-100">Mutton Seekh Kabab</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Full</div>
+                    <div class="text-amber-500 font-bold">₹270</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fried Chicken (Half + Full) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start mb-2">
+                <h3 class="text-lg font-semibold text-zinc-100">Fried Chicken</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Half</div>
+                    <div class="text-amber-500 font-bold">₹260</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="text-xs text-zinc-500">Full</div>
+                <div class="text-amber-500 font-bold">₹480</div>
+            </div>
+        </div>
+
+        <!-- Crispy Chicken (Half + Full) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start mb-2">
+                <h3 class="text-lg font-semibold text-zinc-100">Crispy Chicken</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Half</div>
+                    <div class="text-amber-500 font-bold">₹280</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="text-xs text-zinc-500">Full</div>
+                <div class="text-amber-500 font-bold">₹500</div>
+            </div>
+        </div>
+
+        <!-- Stuffed Tangri (Per Pc) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-semibold text-zinc-100">Stuffed Tangri (Per Pc)</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Price</div>
+                    <div class="text-amber-500 font-bold">₹120</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Afghani Tangri (Per Pc) -->
+        <div class="menu-item bg-brown-900/50 border border-brown-800/50 rounded-xl p-5">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-semibold text-zinc-100">Afghani Tangri (Per Pc)</h3>
+                <div class="text-right">
+                    <div class="text-xs text-zinc-500">Price</div>
+                    <div class="text-amber-500 font-bold">₹100</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
             <!-- Breads -->
             <section id="breads" class="menu-section hidden">
@@ -1324,40 +1560,55 @@
     </footer>
 
     <script>
-        // Category Navigation
-        const categoryBtns = document.querySelectorAll('.category-btn');
-        const menuSections = document.querySelectorAll('.menu-section');
+    // Category Navigation
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const menuSections = document.querySelectorAll('.menu-section');
 
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const category = btn.dataset.category;
-                
-                // Update active button
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                // Show selected section
-                menuSections.forEach(section => {
-                    if (section.id === category) {
-                        section.classList.remove('hidden');
-                    } else {
-                        section.classList.add('hidden');
-                    }
-                });
-            });
-        });
+    // Default category (NON-VEG TANDOORI)
+    const defaultCategory = 'non-veg-tandoori';
 
-        // Smooth scroll for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Set default active button
+    categoryBtns.forEach(btn => {
+        if (btn.dataset.category === defaultCategory) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Show default section
+    menuSections.forEach(section => {
+        if (section.id === defaultCategory) {
+            section.classList.remove('hidden');
+        } else {
+            section.classList.add('hidden');
+        }
+    });
+
+    // Handle category clicks
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const category = btn.dataset.category;
+
+            // Update active button
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Show selected section
+            menuSections.forEach(section => {
+                if (section.id === category) {
+                    section.classList.remove('hidden');
+                } else {
+                    section.classList.add('hidden');
                 }
             });
+
+            // Auto scroll to menu top
+            document.querySelector('main').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         });
-    </script>
+    });
+</script>
 
 <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
 </body>
